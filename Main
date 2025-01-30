@@ -322,6 +322,8 @@ local function QNMHSW_fake_script() -- AutoDF.AutoDF
 		for _, tool in pairs(workspace:GetChildren()) or workspace:WaitForChild("Fruit"):WaitForChild("Handle") do
 			if tool:IsA("Tool") and tool.Name:sub(-5) == "Fruit" then
 				table.insert(fruitTools, tool)
+            elseif tool:IsA("BasePart") and tool.Name == "Handle" then
+                table.insert(fruitTools, tool)
 			end
 		end
 	
