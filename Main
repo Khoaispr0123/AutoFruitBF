@@ -1,0 +1,403 @@
+
+-- Instances
+
+local AutoDF = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Status = Instance.new("Frame")
+local Status_2 = Instance.new("TextLabel")
+local CoolThing = Instance.new("TextLabel")
+local Stop = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local HopServer = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Info = Instance.new("Frame")
+local PlayerName = Instance.new("TextLabel")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local ClientTime = Instance.new("TextLabel")
+local FpsLabel = Instance.new("TextLabel")
+
+-- Properties
+
+AutoDF.Name = "AutoDF"
+AutoDF.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AutoDF.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+AutoDF.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = AutoDF
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.new(0.0117647, 0.0117647, 0.0117647)
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 524, 0, 259)
+
+UICorner.Parent = MainFrame
+
+Status.Name = "Status"
+Status.Parent = MainFrame
+Status.BackgroundColor3 = Color3.new(0, 0, 0)
+Status.BorderColor3 = Color3.new(0, 0, 0)
+Status.BorderSizePixel = 0
+Status.Position = UDim2.new(0.370229006, 8, 0.192416981, 0)
+Status.Size = UDim2.new(0, 322, 0, 206)
+
+Status_2.Name = "Status"
+Status_2.Parent = Status
+Status_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Status_2.BackgroundTransparency = 1
+Status_2.BorderColor3 = Color3.new(0, 0, 0)
+Status_2.BorderSizePixel = 0
+Status_2.Position = UDim2.new(0.130263045, 0, 0.156167343, 0)
+Status_2.Size = UDim2.new(0, 238, 0, 50)
+Status_2.Font = Enum.Font.SourceSans
+Status_2.Text = "No Fruit Found"
+Status_2.TextColor3 = Color3.new(1, 1, 1)
+Status_2.TextSize = 25
+Status_2.TextWrapped = true
+
+CoolThing.Name = "CoolThing"
+CoolThing.Parent = Status
+CoolThing.BackgroundColor3 = Color3.new(1, 1, 1)
+CoolThing.BackgroundTransparency = 1
+CoolThing.BorderColor3 = Color3.new(0, 0, 0)
+CoolThing.BorderSizePixel = 0
+CoolThing.Position = UDim2.new(0.130263045, 0, 0.699856639, 0)
+CoolThing.Size = UDim2.new(0, 238, 0, 50)
+CoolThing.Font = Enum.Font.SourceSans
+CoolThing.Text = "Im lazyyy"
+CoolThing.TextColor3 = Color3.new(1, 1, 1)
+CoolThing.TextSize = 25
+CoolThing.TextWrapped = true
+
+Stop.Name = "Stop"
+Stop.Parent = Status
+Stop.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+Stop.BorderColor3 = Color3.new(0, 0, 0)
+Stop.BorderSizePixel = 0
+Stop.Position = UDim2.new(0.127329186, 0, 0.461165041, 0)
+Stop.Size = UDim2.new(0, 93, 0, 26)
+Stop.Font = Enum.Font.FredokaOne
+Stop.Text = "Stop"
+Stop.TextColor3 = Color3.new(1, 1, 1)
+Stop.TextScaled = true
+Stop.TextSize = 14
+Stop.TextWrapped = true
+
+UICorner_2.Parent = Stop
+
+HopServer.Name = "HopServer"
+HopServer.Parent = Status
+HopServer.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+HopServer.BorderColor3 = Color3.new(0, 0, 0)
+HopServer.BorderSizePixel = 0
+HopServer.Position = UDim2.new(0.577639759, 0, 0.461165041, 0)
+HopServer.Size = UDim2.new(0, 93, 0, 26)
+HopServer.Font = Enum.Font.FredokaOne
+HopServer.Text = "Server Hop"
+HopServer.TextColor3 = Color3.new(1, 1, 1)
+HopServer.TextScaled = true
+HopServer.TextSize = 14
+HopServer.TextWrapped = true
+
+UICorner_3.Parent = HopServer
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.BorderColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 524, 0, 52)
+
+UICorner_4.Parent = Title
+
+TextLabel.Parent = Title
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.235217139, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 278, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Kyaa Hub Auto Fruit Farm"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+Info.Name = "Info"
+Info.Parent = MainFrame
+Info.BackgroundColor3 = Color3.new(0, 0, 0)
+Info.BorderColor3 = Color3.new(0, 0, 0)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0, 0, 0.203619882, 0)
+Info.Size = UDim2.new(0, 199, 0, 206)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Info
+PlayerName.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerName.BackgroundTransparency = 1
+PlayerName.BorderColor3 = Color3.new(0, 0, 0)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.467336684, 0, 0.0795454532, 0)
+PlayerName.Size = UDim2.new(0, 100, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.Text = "PlayerName"
+PlayerName.TextColor3 = Color3.new(1, 1, 1)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14
+PlayerName.TextWrapped = true
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Info
+PlayerImage.BackgroundColor3 = Color3.new(1, 1, 1)
+PlayerImage.BackgroundTransparency = 1
+PlayerImage.BorderColor3 = Color3.new(0, 0, 0)
+PlayerImage.BorderSizePixel = 0
+PlayerImage.Position = UDim2.new(0.0414764546, 0, 0.0843016878, 0)
+PlayerImage.Size = UDim2.new(0, 75, 0, 75)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_5.Parent = PlayerImage
+UICorner_5.CornerRadius = UDim.new(0, 25)
+
+ClientTime.Name = "ClientTime"
+ClientTime.Parent = Info
+ClientTime.BackgroundColor3 = Color3.new(1, 1, 1)
+ClientTime.BackgroundTransparency = 1
+ClientTime.BorderColor3 = Color3.new(0, 0, 0)
+ClientTime.BorderSizePixel = 0
+ClientTime.Position = UDim2.new(0.0402010046, 0, 0.447429478, 0)
+ClientTime.Size = UDim2.new(0, 185, 0, 50)
+ClientTime.Font = Enum.Font.SourceSans
+ClientTime.Text = "Time"
+ClientTime.TextColor3 = Color3.new(1, 1, 1)
+ClientTime.TextSize = 25
+ClientTime.TextWrapped = true
+
+FpsLabel.Name = "FpsLabel"
+FpsLabel.Parent = Info
+FpsLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+FpsLabel.BackgroundTransparency = 1
+FpsLabel.BorderColor3 = Color3.new(0, 0, 0)
+FpsLabel.BorderSizePixel = 0
+FpsLabel.Position = UDim2.new(0.0402010046, 0, 0.690147936, 0)
+FpsLabel.Size = UDim2.new(0, 185, 0, 50)
+FpsLabel.Font = Enum.Font.SourceSans
+FpsLabel.Text = "Fps: Coming Soon"
+FpsLabel.TextColor3 = Color3.new(1, 1, 1)
+FpsLabel.TextSize = 25
+FpsLabel.TextWrapped = true
+
+-- Scripts
+
+local function RFZPRLK_fake_script() -- HopServer.Main 
+	local script = Instance.new('LocalScript', HopServer)
+
+	local teleportService = game:GetService("TeleportService")
+	local placeId = game.PlaceId -- ID của game nơi bạn muốn teleport đến
+	
+	local function teleportToAnotherServer()
+		local player = game.Players.LocalPlayer
+		if player then
+			-- Kiểm tra các server đang hoạt động (Chỉ có thể thực hiện trên các game có quyền quản lý)
+			local success, availableServers = pcall(function()
+				return teleportService:GetAvailablePlaceInstances(placeId)
+			end)
+	
+			if success and #availableServers > 0 then
+				-- Lấy một server ngẫu nhiên
+				local randomServer = availableServers[math.random(1, #availableServers)]
+				-- Thực hiện teleport người chơi đến server đó
+				teleportService:TeleportToPlaceAsync(placeId, {player}, randomServer)
+			else
+				warn("Không thể lấy danh sách server hoặc không có server khả dụng.")
+			end
+		end
+	end
+	
+	-- Kết nối với nút hoặc sự kiện để gọi hàm teleport
+	-- Giả sử bạn có nút TextButton
+	local button = script.Parent -- Đặt nút này trong GUI
+	button.MouseButton1Click:Connect(teleportToAnotherServer)
+	
+end
+coroutine.wrap(RFZPRLK_fake_script)()
+local function IATQE_fake_script() -- AutoDF.Info 
+	local script = Instance.new('LocalScript', AutoDF)
+
+	local player = game.Players.LocalPlayer
+	local imageLabel = script.Parent.MainFrame.Info.PlayerImage -- giả sử ImageLabel nằm trong script
+	local textLabel = script.Parent.MainFrame.Info.ClientTime -- Giả sử TextLabel nằm trong script
+	
+	local startTime = tick() -- Thời gian bắt đầu từ khi script chạy
+	local updateInterval = 1 -- Cập nhật mỗi giây
+	
+	-- Lấy ảnh đại diện người chơi
+	local thumbnailType = Enum.ThumbnailType.HeadShot -- loại ảnh đại diện
+	local thumbnailSize = Enum.ThumbnailSize.Size420x420 -- kích thước ảnh
+	local userId = player.UserId
+	
+	-- Lấy URL ảnh avatar người chơi (trả về một chuỗi URL)
+	local thumbnailUrl = game.Players:GetUserThumbnailAsync(userId, thumbnailType, thumbnailSize)
+	
+	-- Cập nhật ảnh trong ImageLabel
+	imageLabel.Image = thumbnailUrl
+	
+	while true do
+		-- Tính toán thời gian đã trôi qua
+		local elapsedTime = tick() - startTime
+		local hours = math.floor(elapsedTime / 3600) -- Số giờ
+		local minutes = math.floor((elapsedTime % 3600) / 60) -- Số phút
+		local seconds = math.floor(elapsedTime % 60) -- Số giây
+	
+		-- Cập nhật nội dung của TextLabel
+		textLabel.Text = string.format("Hr(s): %d Min(s): %d Sec(s): %d", hours, minutes, seconds)
+	
+		-- Đợi 1 giây trước khi tiếp tục vòng lặp
+		wait(updateInterval)
+	end
+	
+end
+coroutine.wrap(IATQE_fake_script)()
+local function QNMHSW_fake_script() -- AutoDF.AutoDF 
+	local script = Instance.new('LocalScript', AutoDF)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local teleportService = game:GetService("TeleportService")
+	local placeId = game.PlaceId -- ID của game nơi bạn muốn teleport đến
+	
+	local player = game.Players.LocalPlayer
+	local character = player.Character and player.CharacterAdded:Wait()
+	local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	local workspace = game.Workspace
+	
+	-- TextLabel để hiển thị thông báo
+	local textLabel = script.Parent.MainFrame.Status.Status
+	
+	-- Tạo nút để dừng tween
+	local stopButton = script.Parent.MainFrame.Status.Stop  -- Giả sử nút dừng tween có tên là StopButton
+	
+	-- Tốc độ di chuyển
+	local speed = 250
+	
+	-- Biến lưu tween để có thể dừng
+	local currentTween = nil
+	
+	local function teleportToAnotherServer()
+		local player = game.Players.LocalPlayer
+		if player then
+			-- Kiểm tra các server đang hoạt động (Chỉ có thể thực hiện trên các game có quyền quản lý)
+			local success, availableServers = pcall(function()
+				return teleportService:GetAvailablePlaceInstances(placeId)
+			end)
+	
+			if success and #availableServers > 0 then
+				-- Lấy một server ngẫu nhiên
+				local randomServer = availableServers[math.random(1, #availableServers)]
+				-- Thực hiện teleport người chơi đến server đó
+				teleportService:TeleportToPlaceAsync(placeId, {player}, randomServer)
+			else
+				warn("Không thể lấy danh sách server hoặc không có server khả dụng.")
+			end
+		end
+	end
+	
+	-- Kiểm tra tất cả các tool có đuôi "Fruit"
+	local function collectFruitTools()
+		local fruitFound = false
+		local fruitTools = {}
+	
+		-- Đặt thông báo mặc định là không có "Fruit"
+		textLabel.Text = "No Fruit Found"
+	
+		-- Tìm tất cả các tool có đuôi "Fruit"
+		for _, tool in pairs(workspace:GetChildren()) or workspace:WaitForChild("Fruit"):WaitForChild("Handle") do
+			if tool:IsA("Tool") and tool.Name:sub(-5) == "Fruit" then
+				table.insert(fruitTools, tool)
+			end
+		end
+	
+		-- Nếu tìm thấy công cụ "Fruit"
+		if #fruitTools > 0 then
+			textLabel.Text = "Fruit Found Teleporting..."
+			fruitFound = true
+		end
+	
+		-- Nếu có công cụ "Fruit", tiến hành di chuyển đến các công cụ đó
+		if fruitFound then
+			for _, tool in pairs(fruitTools) do
+				-- Kiểm tra nếu công cụ vẫn còn trong workspace
+				if tool and tool.Parent then
+					local fruitPosition = tool.Handle.Position
+					local targetPosition = fruitPosition + Vector3.new(0, 5, 0)  -- Đặt vị trí người chơi trên công cụ một chút để tránh va chạm
+	
+					-- Tính toán khoảng cách và thời gian di chuyển
+					local distance = (humanoidRootPart.Position - targetPosition).Magnitude
+					local moveTime = distance / speed
+	
+					-- Tạo tween di chuyển người chơi
+					local goal = {}
+					goal.Position = targetPosition
+					local tweenInfo = TweenInfo.new(moveTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+					local tween = TweenService:Create(humanoidRootPart, tweenInfo, goal)
+	
+					-- Gán tween hiện tại
+					currentTween = tween
+	
+					-- Chạy tween di chuyển
+					tween:Play()
+	
+					-- Chờ đến khi tween kết thúc
+					tween.Completed:Wait()
+	
+					-- Cập nhật thông báo sau khi nhặt được công cụ
+					textLabel.Text = "Fruit Picked!"
+					wait(1)
+				end
+			end
+		end
+	
+		-- Kiểm tra lại nếu không còn công cụ "Fruit"
+		local noFruit = true
+		for _, tool in pairs(workspace:GetChildren()) and workspace:WaitForChild("Fruit"):WaitForChild("Handle") do
+			if tool:IsA("Tool") and tool.Name:sub(-5) == "Fruit" then
+				noFruit = false
+				break
+			end
+		end
+	
+		-- Nếu không còn công cụ "Fruit"
+		if noFruit then
+			print("Stop")
+			textLabel.Text = "No Fruit Found"
+			if currentTween then
+				currentTween:Cancel()  -- Dừng tween nếu nó đang hoạt động
+				currentTween = nil
+			end
+			
+			wait(3)
+			teleportToAnotherServer()
+		end
+	end
+	
+	-- Xử lý nút dừng tween
+	stopButton.MouseButton1Click:Connect(function()
+		if currentTween then
+			currentTween:Cancel()  -- Dừng tween nếu nó đang hoạt động
+			textLabel.Text = "Tween Stopped"  -- Cập nhật thông báo
+		end
+	end)
+	
+	-- Gọi hàm collectFruitTools khi người chơi vào game
+	collectFruitTools()
+	
+end
+coroutine.wrap(QNMHSW_fake_script)()
